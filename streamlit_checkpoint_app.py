@@ -13,7 +13,7 @@ regions = ['No Region', 'DAKAR', 'LOUGA', 'TAMBACOUNDA', 'KAOLACK',
 selected_region = st.selectbox("Enter Region", options=regions, index=0)
 top_pack = st.number_input("Enter Top Pack",  min_value = 0.0 )
 
-with open("rf_model.pkl", "rb") as file:
+with open("my_log_model.pkl", "rb") as file:
     my_model = joblib.load(file)
 
 if selected_region  == "No Region":
